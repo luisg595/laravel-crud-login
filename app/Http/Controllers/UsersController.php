@@ -38,7 +38,7 @@ class UsersController extends Controller
      */
     public function index(Request $request)
     {
-        $users = $this->repository->allPaginate($request, 3);
+        $users = $this->repository->allPaginate($request, 10);
 
         if (request()->wantsJson()) {
 
